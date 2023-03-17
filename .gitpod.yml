@@ -1,17 +1,2 @@
-tasks:
-  - name: neovim
-    openMode: split-right
-    init: |
-      # Download neovim
-      wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
-
-      # Install neovim
-      sudo apt install ./nvim-linux64.deb
-      sudo apt install cmake python3-neovim
-
-      # Clone neovim config
-      mkdir ~/.config
-      git clone -b thendo https://github.com/thendo-rambane/kickstart.nvim.git ~/.config/nvim
-      gp sync-done neovim-install
-
-    command: nvim
+image:
+  file: .gitpod.Dockefile
