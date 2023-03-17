@@ -11,4 +11,3 @@ tasks:
       # Clone neovim config
       mkdir ~/.config
       git clone -b thendo https://github.com/thendo-rambane/kickstart.nvim.git ~/.config/nvim
-  - command: nvim .
