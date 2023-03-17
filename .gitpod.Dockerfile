@@ -1,4 +1,3 @@
-ls
 FROM gitpod/workspace-full
 
 RUN wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
