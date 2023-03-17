@@ -5,7 +5,8 @@ RUN wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.
 USER root
     
 RUN apt install ./nvim-linux64.deb
-RUN apt install cmake python3-neovim
+RUN apt-get install cmake \
+    python3-neovim
 
 USER gitpod
 
